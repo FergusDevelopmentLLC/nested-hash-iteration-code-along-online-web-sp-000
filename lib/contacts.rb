@@ -14,8 +14,14 @@ require 'pry'
     }
   }
 
+# def remove_strawberry(contacts)
+#   contacts["Freddy Mercury"][:favorite_ice_cream_flavors].delete_at(0)
+#   contacts
+# end
+# puts remove_strawberry(contacts)
+
 def remove_strawberry(contacts)
-  contacts["Freddy Mercury"][:favorite_ice_cream_flavors].delete_at(0)
-  contacts
+  contacts.each do |person, contact_details_hash|
+    binding.pry
+  end
 end
-puts remove_strawberry(contacts)
